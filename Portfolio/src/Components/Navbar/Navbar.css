@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Navbar container styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000; /* Black background for strong contrast */
+  color: white;
+  position: relative;
+  font-family: 'Times New Roman', Times, serif; /* Keep Times New Roman font */
+}
+
+/* Logo styling - Reduced size */
+
+/* Navbar menu container */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  font-size: 20px;
+}
+
+/* Individual menu item styling */
+.nav-item {
+  margin-right: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  color: white;
+}
+
+/* Hover effect for menu items */
+.nav-item:hover {
+  color: #313131; /* Light grey on hover */
+}
+
+/* Connect section styling */
+.nav-connect {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #000;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for "Connect with Me" */
+.nav-connect:hover {
+  background-color: #444242;
+  color: rgb(8, 8, 8);
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    height: 40px; /* Further reduce logo size for mobile */
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .nav-connect {
+    margin-top: 20px;
+  }
+}

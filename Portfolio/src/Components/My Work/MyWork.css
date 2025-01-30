@@ -1,0 +1,114 @@
+/* MyWork.css */
+.mywork {
+    padding: 80px 10%;
+    background-color: #000000; /* Jet Black */
+    text-align: center;
+  }
+  
+  .mywork-title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .mywork-title h1::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #4A90E2; /* Decent Blue */
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .mywork-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mywork-item {
+    background-color: #1a1a1a; /* Dark Gray for card */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .mywork-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
+  }
+  
+  .mywork-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #4A90E2; /* Decent Blue */
+  }
+  
+  .mywork-info {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .mywork-info h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .mywork-info p {
+    font-size: 1rem;
+    color: #cccccc; /* Light Gray for readability */
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .mywork-info a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #4A90E2; /* Decent Blue */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mywork-info a:hover {
+    background-color: #357ABD; /* Slightly darker blue */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mywork {
+      padding: 50px 5%;
+    }
+  
+    .mywork-title h1 {
+      font-size: 2rem;
+    }
+  
+    .mywork-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    .mywork-info h3 {
+      font-size: 1.3rem;
+    }
+  
+    .mywork-info p {
+      font-size: 0.9rem;
+    }
+  }
+  
